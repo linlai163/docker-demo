@@ -1,13 +1,3 @@
-FROM node:14-alpine
+FROM nginx:alpine
 
-RUN echo linlai163
-
-WORKDIR /code
-
-ADD . /code
-
-RUN yarn
-
-EXPOSE 3000
-
-CMD npm start
+ADD index.html /usr/share/nginx/html/
