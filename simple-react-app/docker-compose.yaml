@@ -1,0 +1,8 @@
+version: "3"
+services:
+  simple:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 4000:80
